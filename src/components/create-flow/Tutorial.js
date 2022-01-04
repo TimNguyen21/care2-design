@@ -3,7 +3,7 @@ import '../../scss/create-flow/Tutorial.scss'
 
 const Tutorial = () => {
     return (
-        <main class="create-flow-tutorial">
+        <section class="create-flow-tutorial">
             <div class="create-flow-tutorial__close-button">X</div>
             <header>HOW TO BUILD A WINNING PETITION</header>
             <label>It's easy, free, and quick. In just minutes, you be on your way to lasting impact!</label>
@@ -17,7 +17,7 @@ const Tutorial = () => {
                 </iframe>
             </div>
             <div class="create-flow-tutorial__close-label">Ok, I got it, let's go!</div>
-        </main>
+        </section>
     )
 }
 
