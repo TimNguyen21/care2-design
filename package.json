@@ -1,6 +1,6 @@
 {
-  "homepage": "https://TimNguyen21.github.io/electron_app/",
-  "name": "electron",
+  "homepage": "https://TimNguyen21.github.io/care2-design/",
+  "name": "care2Design",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
