@@ -13,7 +13,7 @@ const ElectronContainer = () => {
         <main>
             <header>
                 <Link to={'/'}>
-                    <button class="main-home-button">Main Home</button>
+                    <button class="main-home-button">Care2 Design Home</button>
                 </Link>
             </header>
 
