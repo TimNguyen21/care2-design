@@ -11,7 +11,7 @@ const CreateFlowContainer = () => {
     return (
         <main>
             <header>
-                <Link to={'/care2-design'}>
+                <Link to={'/'}>
                     <button class="main-home-button">Main Home</button>
                 </Link>
             </header>
