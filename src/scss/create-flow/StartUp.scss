@@ -4,6 +4,7 @@
   align-items: center;
 
   &__header-label {
+
     display: flex;
     justify-content: center;
     font-size: 27px;
@@ -25,6 +26,7 @@
     }
 
     input {
+
       height: 50px;
       margin-bottom: 40px;
       padding: 0 10px;
@@ -35,6 +37,7 @@
   }
 
   &__build-petition-button {
+
     position: relative;
     border: 0;
     color: white;
