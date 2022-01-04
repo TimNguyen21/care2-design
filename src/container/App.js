@@ -13,7 +13,7 @@ class App extends Component {
             <Switch>
                 <Route
                     exact
-                    path="/"
+                    path="/care2-design"
                     render={() => {
                         return <MainNav />
                     }}
