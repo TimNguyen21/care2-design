@@ -14,7 +14,7 @@ const Form = () => {
                 {/*Edit Image Section*/}
                 <div class="create-flow-form__input-image-section">
                     <div class="create-flow-form__input-image-tab">
-                        <div class="create-flow-form__input-tab-label">
+                        <div class="create-flow-form__change-image-link">
                             <div class="create-flow-form__input-tab-icon">&#128247;</div>
                             CHANGE IMAGE
                         </div>
@@ -44,7 +44,7 @@ const Form = () => {
                             <div className="create-flow-form__input-tab-icon">&#9998;</div>
                             EDIT NAME
                         </div>
-                        <div className="create-flow-form__input-tab-label">
+                        <div className="create-flow-form__change-author-link">
                             <div className="create-flow-form__input-tab-icon">&#128247;</div>
                             AUTHOR PHOTO
                         </div>

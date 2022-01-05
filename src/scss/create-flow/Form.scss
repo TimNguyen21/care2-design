@@ -42,7 +42,7 @@
       display: flex;
       color: white;
       font-weight: bold;
-      cursor: pointer;
+      cursor: default;
 
       &-icon {
         margin-right: 8px;
@@ -112,6 +112,16 @@
       height: 340px;
       border: black dashed 1px;
     }
+  }
+
+  &__change-image-link {
+    @extend .create-flow-form__input-tab-label;
+    cursor: pointer;
+  }
+
+  &__change-author-link {
+    @extend .create-flow-form__input-tab-label;
+    cursor: pointer;
   }
 
   &__input-title {
