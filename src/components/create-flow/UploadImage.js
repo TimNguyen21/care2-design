@@ -11,7 +11,7 @@ const UploadImage = () => {
                 <div class="create-flow-upload-image__close-button">x</div>
             </div>
             <div class="create-flow-upload-image__tab-options">
-                <div class="create-flow-upload-image__tab-option--upload create-flow-upload-image__tab-option--upload-active">MY IMAGES</div>
+                <div class="create-flow-upload-image__tab-option--upload create-flow-upload-image__tab-option--active">MY IMAGES</div>
                 <div class="create-flow-upload-image__tab-option--care2-images">Free from Care2</div>
             </div>
             <div class="create-flow-upload-image__description">Upload an image in JPG, PNG, of GIF format. Up to 1.5 MB</div>

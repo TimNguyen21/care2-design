@@ -57,17 +57,20 @@
     &-option {
 
       margin-right: 5px;
+      color: gray;
       background-color: lightgrey;
       padding: 3px 10px;
       cursor: pointer;
 
+      &--active {
+        background-color: #f6f6f6;
+        color: black;
+        border-bottom: lightgrey dashed 1px;
+      }
+
       &--upload,
       &--care2-images {
         @extend .create-flow-upload-image__tab-option;
-
-        &-active {
-          background-color: #f6f6f6;
-        }
       }
     }
   }
