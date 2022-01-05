@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../scss/create-flow/Form.scss'
 import care2logo from "../../images/create-flow/care2logo-2.png";
+import angryDoggo from "../../images/create-flow/angry-doggo.jpg";
 
 const Form = () => {
     return (
@@ -22,7 +23,7 @@ const Form = () => {
                             ?
                         </div>
                     </div>
-                    <img src="https://media1.popsugar-assets.com/files/thumbor/PjjJ4I0zydAEM56U4ngo9GMYPFY/1x647:2001x1471/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/09/23/671/n/1922243/9149b6bd5d88df88e30c16.96885837_.jpg" class="create-flow-form__input-image-field"></img>
+                    <img src={angryDoggo} class="create-flow-form__input-image-field"></img>
                 </div>
                 {/*Edit Title Section*/}
                 <div className="create-flow-form__input-title-section">
