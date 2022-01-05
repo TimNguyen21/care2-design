@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../scss/create-flow/StartUp.scss'
-import care2Logo from "../../images/create-flow/care2Logo.png";
+import care2logo from "../../images/create-flow/care2logo-2.png";
 
 const StartUp = () => {
     return (
         <main class="create-flow-start-up">
             <header>
-                <img src={care2Logo} />
+                <img class="create-flow-start-up__logo" src={care2logo} />
             </header>
             <form class="create-flow-start-up__form">
                 <label class='create-flow-start-up__header-label'>LET'S GET STARTED WITH A FEW EASY QUESTIONS</label>

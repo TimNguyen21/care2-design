@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../scss/create-flow/Form.scss'
-import care2Logo from "../../images/create-flow/care2Logo.png";
+import care2logo from "../../images/create-flow/care2logo-2.png";
 
 const Form = () => {
     return (
         <main class="create-flow-form">
             <header class="create-flow-form__header">
-                <img class="create-flow-form__logo" src={care2Logo} />
+                <img class="create-flow-form__logo" src={care2logo} />
                 <button class="create-flow-form__publish-button">PUBLISH</button>
             </header>
             <form class="create-flow-form__form">

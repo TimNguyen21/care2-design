@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
 
+  &__logo {
+    height: 100px;
+    margin-top: 10px;
+  }
+
   &__header-label {
 
     display: flex;
