@@ -10,7 +10,7 @@ import '../scss/container/CreateFlowContainer.scss';
 const CreateFlowContainer = () => {
     return (
         <main>
-            <header>
+            <header class='main-home-nav'>
                 <Link to={'/'}>
                     <button class="main-home-button">Care2 Design Home</button>
                 </Link>
