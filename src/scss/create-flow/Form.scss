@@ -40,6 +40,7 @@
     &-tab {
 
       display: flex;
+      height: 25px;
       color: white;
       font-weight: bold;
       cursor: default;
@@ -60,13 +61,36 @@
     }
 
     &-tool-tip {
-
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #017c4f;
-      width: 35px;
-      cursor: help;
+      position: relative;
+
+      &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: #017c4f;
+        width: 35px;
+        cursor: help;
+
+        &:hover + .create-flow-form__input-tool-tip-info {
+          display: block;
+        }
+      }
+
+      &-info {
+        display: none;
+        position: absolute;
+        padding: 10px;
+        top: -5px;
+        left: 38px;
+        height: auto;
+        width: 250px;
+        border: #00A76A solid 1px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+      }
     }
 
     &-field {

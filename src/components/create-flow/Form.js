@@ -20,7 +20,8 @@ const Form = () => {
                             CHANGE IMAGE
                         </div>
                         <div class="create-flow-form__input-tool-tip">
-                            ?
+                            <div class="create-flow-form__input-tool-tip-icon">?</div>
+                            <div class="create-flow-form__input-tool-tip-info">Change image tool tip info</div>
                         </div>
                     </div>
                     <img src={angryDoggo} class="create-flow-form__input-image-field"></img>
@@ -33,7 +34,8 @@ const Form = () => {
                             EDIT TITLE
                         </div>
                         <div className="create-flow-form__input-tool-tip">
-                            ?
+                            <div className="create-flow-form__input-tool-tip-icon">?</div>
+                            <div className="create-flow-form__input-tool-tip-info">Change title tool tip info</div>
                         </div>
                     </div>
                     <textarea class="create-flow-form__input-title-field"></textarea>
@@ -50,7 +52,8 @@ const Form = () => {
                             AUTHOR PHOTO
                         </div>
                         <div className="create-flow-form__input-tool-tip">
-                            ?
+                            <div className="create-flow-form__input-tool-tip-icon">?</div>
+                            <div className="create-flow-form__input-tool-tip-info">Change name and author photo tool tip info</div>
                         </div>
                     </div>
                     <textarea className="create-flow-form__input-name-field"></textarea>
@@ -63,7 +66,8 @@ const Form = () => {
                             EDIT TARGET
                         </div>
                         <div className="create-flow-form__input-tool-tip">
-                            ?
+                            <div className="create-flow-form__input-tool-tip-icon">?</div>
+                            <div className="create-flow-form__input-tool-tip-info">Change targeting tool tip info</div>
                         </div>
                     </div>
                     <textarea className="create-flow-form__input-target-field"></textarea>
@@ -76,7 +80,8 @@ const Form = () => {
                             EDIT SUMMARY
                         </div>
                         <div className="create-flow-form__input-tool-tip">
-                            ?
+                            <div className="create-flow-form__input-tool-tip-icon">?</div>
+                            <div className="create-flow-form__input-tool-tip-info">Change summary tool tip info</div>
                         </div>
                     </div>
                     <textarea className="create-flow-form__input-summary-field"></textarea>
