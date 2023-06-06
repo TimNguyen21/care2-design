@@ -1,0 +1,33 @@
+.air-traffic-control {
+
+  &--near-completion {
+    margin: 10px;
+    border-collapse: collapse;
+
+    tr:first-child {
+      width: 500px;
+      background-color: #EDEEEF;
+
+      th {
+        text-align: left;
+      }
+
+      th:first-child {
+        width: 75px;
+        white-space: nowrap;
+      }
+
+      th:nth-child(2) {
+        width: 400px;
+      }
+
+      th:nth-child(3) {
+        width: 120px;
+      }
+
+      th:nth-child(4) {
+        width: 80px;
+      }
+    }
+  }
+}

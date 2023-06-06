@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Nav from '../components/air-traffic-control/Nav'
 import NearCompletion from "../components/air-traffic-control/NearCompletion";
 import AtRisk from "../components/air-traffic-control/AtRisk";
@@ -7,11 +7,12 @@ import { Route, Switch, Link } from "react-router-dom";
 import '../scss/container/AirTrafficControl.scss';
 
 const AirTrafficControlContainer = () => {
+
     return (
         <main>
-            <header class='main-home-nav'>
+            <header className='main-home-nav'>
                 <Link to={'/'}>
-                    <button class="main-home-button">Care2 Design Home</button>
+                    <button className="main-home-button">Care2 Design Home</button>
                 </Link>
             </header>
 

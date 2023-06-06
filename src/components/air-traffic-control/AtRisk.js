@@ -3,7 +3,7 @@ import '../../scss/air-traffic-control/AtRisk.scss'
 
 const AtRisk = () => {
     return (
-        <section class="air-traffic-control--at-risk">
+        <section className="air-traffic-control--at-risk">
             At Risk
         </section>
     )
