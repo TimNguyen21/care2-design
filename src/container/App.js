@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MainNav from './MainNav'
 import ElectronContainer from './ElectronContainer'
 import CreateFlowContainer from "./CreateFlowContainer";
+import AirTrafficControlContainer from "./AirTrafficControl";
 import { Route, Switch } from "react-router-dom";
 import '../scss/container/App.scss';
 
@@ -28,6 +29,12 @@ class App extends Component {
                     path="/create-flow"
                     render={() => {
                         return <CreateFlowContainer />
+                    }}
+                />
+                <Route
+                    path="/air-traffic-control"
+                    render={() => {
+                        return <AirTrafficControlContainer />
                     }}
                 />
             </Switch>
