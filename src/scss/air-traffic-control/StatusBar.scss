@@ -1,0 +1,33 @@
+.status-bar {
+  width: 100%;
+  height: 25px;
+  background-color: #D8D8D8;
+  border-radius: 15px;
+  text-align: center;
+  vertical-align: center;
+  position: relative;
+
+  &__current {
+
+    &-percentage {
+      width: 100%;
+      position: relative;
+      bottom: 20px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &-progress {
+      background-color: #D0F0E5;
+      color: transparent;
+      height: 100%;
+      border-radius: 15px;
+      position: relative;
+
+      &--at-risk {
+        background-color: #FCE8E2;
+      }
+    }
+  }
+}
