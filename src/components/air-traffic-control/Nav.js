@@ -5,8 +5,8 @@ import '../../scss/air-traffic-control/Nav.scss'
 const Nav = () => {
     return (
         <section class="air-traffic-control-nav">
-            <Link to={'/air-traffic-control/near-completion'}>
-                <button>Near Completion</button>
+            <Link to={'/air-traffic-control/optin-table'}>
+                <button>Optin Table</button>
             </Link>
             <Link to={'/air-traffic-control/at-risk'}>
                 <button>At Risk</button>

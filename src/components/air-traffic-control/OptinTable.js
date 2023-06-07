@@ -1,31 +1,33 @@
 import React, { Component } from 'react';
 import OptinSummary from "./OptinSummary";
-import '../../scss/air-traffic-control/NearCompletion.scss'
+import '../../scss/air-traffic-control/OptinTable.scss'
 import {optinsData} from "../../data/optins";
 
-class NearCompletion extends Component {
+class OptinTable extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
-        this.optinsData = optinsData;
+        this.state = {optinsData: optinsData};
     }
 
     setOptins = () => {
-        return optinsData.map(optin => {
+
+        return this.state['optinsData'].map(optin => {
 
             return <OptinSummary id={optin.id}
                                  name={optin.name}
                                  icon={optin.icon}
                                  deadline={optin.deadline}
                                  limitPercentage={optin.limitPercentage}
-                                 key={optin.id}/>
-        })
+                                 hasFacebook={optin.hasFacebook}
+                                 hasTap={optin.hasTap}
+                                 key={optin.id}/> })
     }
 
     render () {
         return (
-            <table className="air-traffic-control__near-completion">
+            <table className="air-traffic-control__optin-table">
                 <tbody>
                     <tr>
                         <th>Optin Name</th>
@@ -36,6 +38,7 @@ class NearCompletion extends Component {
                         <th></th>
                         <th></th>
                     </tr>
+
                     {this.setOptins()}
                 </tbody>
             </table>
@@ -43,4 +46,4 @@ class NearCompletion extends Component {
     }
 }
 
-export default NearCompletion;
+export default OptinTable;

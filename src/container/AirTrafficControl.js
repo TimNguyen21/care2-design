@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../components/air-traffic-control/Nav'
-import NearCompletion from "../components/air-traffic-control/NearCompletion";
+import OptinTable from "../components/air-traffic-control/OptinTable";
 import AtRisk from "../components/air-traffic-control/AtRisk";
 import AtRiskV2 from "../components/air-traffic-control/AtRiskV2";
 import { Route, Switch, Link } from "react-router-dom";
@@ -20,9 +20,9 @@ const AirTrafficControlContainer = () => {
 
             <Switch>
                 <Route
-                    path="/air-traffic-control/near-completion"
+                    path="/air-traffic-control/optin-table"
                     render={() => {
-                        return <NearCompletion />
+                        return <OptinTable />
                     }}
                 />
                 <Route

@@ -1,6 +1,6 @@
 .air-traffic-control {
 
-  &__near-completion {
+  &__optin-table {
     margin: 10px;
     border-collapse:collapse;
 
@@ -25,12 +25,10 @@
 
         &:nth-child(3) {
           width: 20px;
-          text-align: right;
         }
 
         &:nth-child(5) {
           width: 45px;
-          text-align: left;
         }
 
         &:nth-child(6) {

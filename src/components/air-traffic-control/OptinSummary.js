@@ -12,9 +12,9 @@ const OptinSummary = (props) => {
                 <label className="air-traffic-control__optin-summary--name">{props.name}</label>
             </td>
             <td>{props.deadline}</td>
-            <td><img className="air-traffic-control__optin-summary--facebook-icon" src={facebookIcon} /></td>
+            <td><img className="air-traffic-control__optin-summary--facebook-icon" src={facebookIcon} hidden={!props.hasFacebook}/></td>
             <td></td>
-            <td><img className="air-traffic-control__optin-summary--tap-icon" src={tapIcon} /></td>
+            <td><img className="air-traffic-control__optin-summary--tap-icon" src={tapIcon} hidden={!props.hasTap}/></td>
             {/*create status bar component and pass in props*/}
             <td>{props.limitPercentage}</td>
             <td onClick={() => {console.log(`Edit Options ${props.id}`)}}><div className="air-traffic-control__optin-summary--edit-options">...</div></td>

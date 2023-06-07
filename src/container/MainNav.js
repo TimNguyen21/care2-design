@@ -11,7 +11,7 @@ const MainNav = () => {
             <Link to={'/create-flow/start-page'}>
                 <button>Petition Create Flow Design</button>
             </Link>
-            <Link to={'/air-traffic-control/near-completion'}>
+            <Link to={'/air-traffic-control/optin-table'}>
                 <button>Air Traffic Control Design</button>
             </Link>
         </section>
