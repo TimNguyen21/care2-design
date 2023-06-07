@@ -1,10 +1,47 @@
 .air-traffic-control {
 
-  &--optin-summary {
+  &__optin-summary {
     width: 100%;
+    border-bottom: 1px solid #F5F5F5;
 
-    td:first-child {
-      text-align: center;
+    &--info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 525px;
+      margin: 10px 0;
+      padding-left: 20px;
+    }
+
+    &--icon {
+      height: 35px;
+      width: 35px;
+      margin-right: 20px;
+    }
+
+    &--name {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      &:hover {
+        white-space: unset;
+      }
+    }
+
+    &--facebook-icon {
+      position: relative;
+      left: 7px;
+    }
+
+    &--tap-icon {
+      position: relative;
+      bottom: 1px;
+    }
+    
+    &--edit-options {
+      transform: rotate(90deg);
+      cursor: pointer;
     }
   }
 }

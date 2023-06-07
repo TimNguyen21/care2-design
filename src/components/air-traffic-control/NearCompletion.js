@@ -16,21 +16,24 @@ class NearCompletion extends Component {
 
             return <OptinSummary id={optin.id}
                                  name={optin.name}
+                                 icon={optin.icon}
                                  deadline={optin.deadline}
+                                 limitPercentage={optin.limitPercentage}
                                  key={optin.id}/>
         })
     }
 
     render () {
         return (
-            <table className="air-traffic-control--near-completion">
+            <table className="air-traffic-control__near-completion">
                 <tbody>
                     <tr>
                         <th>Optin Name</th>
-                        <th></th>
                         <th>Deadline</th>
-                        <th>FB & TAP</th>
-                        <th>Status Bar</th>
+                        <th>FB</th>
+                        <th>&</th>
+                        <th>TAP</th>
+                        <th></th>
                         <th></th>
                     </tr>
                     {this.setOptins()}

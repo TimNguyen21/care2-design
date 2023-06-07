@@ -1,16 +1,23 @@
 import React from 'react';
 import '../../scss/air-traffic-control/OptinSummary.scss'
+import facebookIcon  from "../../images/air-traffic-control/facebook.png";
+import tapIcon from "../../images/air-traffic-control/tap.png";
 
 const OptinSummary = (props) => {
 
     return (
-        <tr className="air-traffic-control--optin-summary">
-            <td>img</td>
-            <td>{props.name}</td>
+        <tr className="air-traffic-control__optin-summary">
+            <td className="air-traffic-control__optin-summary--info">
+                <img className="air-traffic-control__optin-summary--icon" src={props.icon}/>
+                <label className="air-traffic-control__optin-summary--name">{props.name}</label>
+            </td>
             <td>{props.deadline}</td>
-            <td>FB & TAP</td>
-            <td>Status Bar</td>
-            <td onClick={() => {console.log(`Edit Options ${props.id}`)}}>...</td>
+            <td><img className="air-traffic-control__optin-summary--facebook-icon" src={facebookIcon} /></td>
+            <td></td>
+            <td><img className="air-traffic-control__optin-summary--tap-icon" src={tapIcon} /></td>
+            {/*create status bar component and pass in props*/}
+            <td>{props.limitPercentage}</td>
+            <td onClick={() => {console.log(`Edit Options ${props.id}`)}}><div className="air-traffic-control__optin-summary--edit-options">...</div></td>
         </tr>
     )
 }
