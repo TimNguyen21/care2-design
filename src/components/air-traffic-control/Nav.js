@@ -5,14 +5,17 @@ import '../../scss/air-traffic-control/Nav.scss'
 const Nav = () => {
     return (
         <section class="air-traffic-control-nav">
+            <Link to={'/air-traffic-control'}>
+                <button>Main</button>
+            </Link>
             <Link to={'/air-traffic-control/optin-table'}>
                 <button>Optin Table</button>
             </Link>
             <Link to={'/air-traffic-control/at-risk'}>
                 <button>At Risk</button>
             </Link>
-            <Link to={'/air-traffic-control/at-risk-v2'}>
-                <button>At Risk V2</button>
+            <Link to={'/air-traffic-control/countries-summary'}>
+                <button>Countries Summary</button>
             </Link>
         </section>
     )

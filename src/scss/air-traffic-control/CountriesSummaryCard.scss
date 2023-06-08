@@ -1,0 +1,44 @@
+.countries-summary-card {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    height: 120px;
+    background-color: #EDEEEF;
+    color: #222222;
+  }
+
+  &__header {
+    display: block;
+    margin: 3px 0;
+    color: #373B40;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__US, &__non-US {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding: 8px 0;
+
+    &-value {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    &-link {
+      color: #035065;
+      cursor: pointer;
+    }
+  }
+
+  &__US {
+    border-right: #979797 double 2px;
+  }
+}

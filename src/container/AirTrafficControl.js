@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../components/air-traffic-control/Nav'
 import OptinTable from "../components/air-traffic-control/OptinTable";
+import CountriesSummaryCard from "../components/air-traffic-control/CountriesSummaryCard";
 import AtRisk from "../components/air-traffic-control/AtRisk";
 import AtRiskV2 from "../components/air-traffic-control/AtRiskV2";
 import { Route, Switch, Link } from "react-router-dom";
@@ -32,9 +33,15 @@ const AirTrafficControlContainer = () => {
                     }}
                 />
                 <Route
-                    path="/air-traffic-control/at-risk-v2"
+                    path="/air-traffic-control/countries-summary"
                     render={() => {
-                        return <AtRiskV2 />
+                        return <CountriesSummaryCard label='Air Traffic' USValue={90} nonUSValue={50}/>
+                    }}
+                />
+                <Route
+                    path="/air-traffic-control"
+                    render={() => {
+                        return <section><OptinTable /></section>
                     }}
                 />
             </Switch>
