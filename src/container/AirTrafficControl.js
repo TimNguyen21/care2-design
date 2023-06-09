@@ -1,11 +1,14 @@
 import React from 'react';
 import Nav from '../components/air-traffic-control/Nav'
 import OptinTable from "../components/air-traffic-control/OptinTable";
+import FilterForm from "../components/air-traffic-control/FilterForm";
 import CountriesSummaryCard from "../components/air-traffic-control/CountriesSummaryCard";
 import AtRisk from "../components/air-traffic-control/AtRisk";
 import AtRiskV2 from "../components/air-traffic-control/AtRiskV2";
 import { Route, Switch, Link } from "react-router-dom";
 import '../scss/container/AirTrafficControl.scss';
+
+import {optinsData} from "../data/optins";
 
 const AirTrafficControlContainer = () => {
 
@@ -23,7 +26,7 @@ const AirTrafficControlContainer = () => {
                 <Route
                     path="/air-traffic-control/optin-table"
                     render={() => {
-                        return <OptinTable />
+                        return <OptinTable optins={optinsData} />
                     }}
                 />
                 <Route
@@ -39,9 +42,19 @@ const AirTrafficControlContainer = () => {
                     }}
                 />
                 <Route
+                    path="/air-traffic-control/filter-form"
+                    render={() => {
+                        return <FilterForm />
+                    }}
+                />
+                <Route
                     path="/air-traffic-control"
                     render={() => {
-                        return <section><OptinTable /></section>
+                        return <section>
+                            <OptinTable optins={optinsData} />
+                            <FilterForm />
+                            <CountriesSummaryCard label='Air Traffic' USValue={80} nonUSValue={150}/>
+                        </section>
                     }}
                 />
             </Switch>

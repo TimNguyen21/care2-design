@@ -17,6 +17,9 @@ const Nav = () => {
             <Link to={'/air-traffic-control/countries-summary'}>
                 <button>Countries Summary</button>
             </Link>
+            <Link to={'/air-traffic-control/filter-form'}>
+                <button>Filter Form</button>
+            </Link>
         </section>
     )
 }
